@@ -1,6 +1,6 @@
 {
   "profile": "QCA9377/hw1.1",
-  "board_key": "bus=pci,vendor=168c,device=0042,subsystem-vendor=1028,subsystem-device=1810",
+  "board_key": "bus=pci,vendor=168c,device=0042,subsystem-vendor=17AA,subsystem-device=4035",
   "board_selection": "board-api2-exact",
   "board_bytes": 8124,
   "board_sha256": "b2713b77c725b0ff81af75c85c3aeba97885d0f40174f715b1e39d5a9d50f4e7",

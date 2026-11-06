@@ -42,7 +42,7 @@ class PayloadTests(unittest.TestCase):
         self.assertEqual(p.sha(selected), 'b2713b77c725b0ff81af75c85c3aeba97885d0f40174f715b1e39d5a9d50f4e7')
         files, header, entry = p.prepare_profile(ROOT, folder, 'Ath10kPayload9377',
             p.QCA9377_BOARD_KEY, 'QCA9377/hw1.1',
-            ('0x0042', '0x1028', '0x1810', '1', '0x05020001u'), True)
+            ('0x0042', '0x17AA', '0x4035', '0x30', '0x05020001u'), True)
         import json
         manifest = json.loads(files[ROOT / 'firmware/prepared/QCA9377/manifest.json'])
         self.assertEqual(manifest['board_selection'], 'board-api2-exact')
@@ -63,7 +63,7 @@ class PayloadTests(unittest.TestCase):
             for name in ('board-2.bin', 'board.bin', 'firmware-6.bin'):
                 shutil.copyfile(folder / name, tmp / name)
             args = (ROOT, tmp, 'Ath10kPayload9377', p.QCA9377_BOARD_KEY, 'QCA9377/hw1.1',
-                ('0x0042', '0x1028', '0x1810', '1', '0x05020001u'), True)
+                ('0x0042', '0x17AA', '0x4035', '0x30', '0x05020001u'), True)
             bad = [b'corrupt', container(p.BOARD_MAGIC, board_entry(p.QCA9377_BOARD_KEY,b'a'*8124)*2),
                    container(p.BOARD_MAGIC,board_entry(p.QCA9377_BOARD_KEY,b'a'*8000))]
             for data in bad:

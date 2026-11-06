@@ -5,7 +5,7 @@
 #pragma once
 #include <IOKit/IOTypes.h>
 namespace Ath10kPayload {
-static constexpr char kBoardKey[] = "bus=pci,vendor=168c,device=003e,subsystem-vendor=1028,subsystem-device=0310";
+static constexpr char kBoardKey[] = "bus=pci,vendor=168c,device=003e,subsystem-vendor=17AA,subsystem-device=0310";
 static constexpr char kBoardSHA256[] = "7b01edabe0fc9071abe4d20c7f336fc5e4dc6e2ed4803df54487eef155b16862";
 static constexpr char kFirmwareVersion[] = "WLAN.RM.4.4.1-00309-";
 static constexpr UInt32 kFirmwareSize = 681821;
@@ -44691,7 +44691,7 @@ static constexpr UInt32 kFirmwareEntryAddress = 0x000a0400u;
 #pragma once
 #include <IOKit/IOTypes.h>
 namespace Ath10kPayload9377 {
-static constexpr char kBoardKey[] = "bus=pci,vendor=168c,device=0042,subsystem-vendor=1028,subsystem-device=1810";
+static constexpr char kBoardKey[] = "bus=pci,vendor=168c,device=0042,subsystem-vendor=17AA,subsystem-device=1810";
 static constexpr char kBoardSHA256[] = "b2713b77c725b0ff81af75c85c3aeba97885d0f40174f715b1e39d5a9d50f4e7";
 static constexpr char kFirmwareVersion[] = "WLAN.TF.2.1-00021-QCARMSWP-1";
 static constexpr UInt32 kFirmwareSize = 727125;
@@ -92193,8 +92193,8 @@ static constexpr UInt32 kFirmwareEntryAddress = 0x000a0400u;
 
 namespace Ath10kPayload {
 static constexpr Profile kProfiles[] = {
-    {0x003e, 0x1028, 0x0310, 10, 0x05030000u, true, Ath10kPayload::kBoardKey, Ath10kPayload::kBoardSelection, Ath10kPayload::kBoardSHA256, Ath10kPayload::kBoard, sizeof(Ath10kPayload::kBoard), Ath10kPayload::kFirmwareVersion, Ath10kPayload::kFirmwareSize, Ath10kPayload::kFirmwareSHA256, Ath10kPayload::kFirmware, Ath10kPayload::kOTPSize, Ath10kPayload::kOTPSHA256, Ath10kPayload::kOTP, Ath10kPayload::kOTPIgnoreResult, Ath10kPayload::kSupportsSkipClockInit, Ath10kPayload::kFirmwareSegments, Ath10kPayload::kFirmwareSegmentCount, Ath10kPayload::kFirmwareSegmentDataBytes, Ath10kPayload::kFirmwareEntryAddress},
-    {0x0042, 0x1028, 0x1810, 1, 0x05020001u, true, Ath10kPayload9377::kBoardKey, Ath10kPayload9377::kBoardSelection, Ath10kPayload9377::kBoardSHA256, Ath10kPayload9377::kBoard, sizeof(Ath10kPayload9377::kBoard), Ath10kPayload9377::kFirmwareVersion, Ath10kPayload9377::kFirmwareSize, Ath10kPayload9377::kFirmwareSHA256, Ath10kPayload9377::kFirmware, Ath10kPayload9377::kOTPSize, Ath10kPayload9377::kOTPSHA256, Ath10kPayload9377::kOTP, Ath10kPayload9377::kOTPIgnoreResult, Ath10kPayload9377::kSupportsSkipClockInit, Ath10kPayload9377::kFirmwareSegments, Ath10kPayload9377::kFirmwareSegmentCount, Ath10kPayload9377::kFirmwareSegmentDataBytes, Ath10kPayload9377::kFirmwareEntryAddress},
+    {0x003e, 0x17AA, 0x0310, 10, 0x05030000u, true, Ath10kPayload::kBoardKey, Ath10kPayload::kBoardSelection, Ath10kPayload::kBoardSHA256, Ath10kPayload::kBoard, sizeof(Ath10kPayload::kBoard), Ath10kPayload::kFirmwareVersion, Ath10kPayload::kFirmwareSize, Ath10kPayload::kFirmwareSHA256, Ath10kPayload::kFirmware, Ath10kPayload::kOTPSize, Ath10kPayload::kOTPSHA256, Ath10kPayload::kOTP, Ath10kPayload::kOTPIgnoreResult, Ath10kPayload::kSupportsSkipClockInit, Ath10kPayload::kFirmwareSegments, Ath10kPayload::kFirmwareSegmentCount, Ath10kPayload::kFirmwareSegmentDataBytes, Ath10kPayload::kFirmwareEntryAddress},
+    {0x0042, 0x17AA, 0x4035, 0x30, 0x05020001u, true, Ath10kPayload9377::kBoardKey, Ath10kPayload9377::kBoardSelection, Ath10kPayload9377::kBoardSHA256, Ath10kPayload9377::kBoard, sizeof(Ath10kPayload9377::kBoard), Ath10kPayload9377::kFirmwareVersion, Ath10kPayload9377::kFirmwareSize, Ath10kPayload9377::kFirmwareSHA256, Ath10kPayload9377::kFirmware, Ath10kPayload9377::kOTPSize, Ath10kPayload9377::kOTPSHA256, Ath10kPayload9377::kOTP, Ath10kPayload9377::kOTPIgnoreResult, Ath10kPayload9377::kSupportsSkipClockInit, Ath10kPayload9377::kFirmwareSegments, Ath10kPayload9377::kFirmwareSegmentCount, Ath10kPayload9377::kFirmwareSegmentDataBytes, Ath10kPayload9377::kFirmwareEntryAddress},
 };
 static constexpr Profile kUnavailable = {};
 const Profile &selectProfile(UInt16 vendor, UInt16 device, UInt16 subvendor, UInt16 subdevice, UInt8 chip) {

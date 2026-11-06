@@ -1,6 +1,6 @@
 {
   "profile": "QCA6174/hw3.2",
-  "board_key": "bus=pci,vendor=168c,device=003e,subsystem-vendor=1028,subsystem-device=0310",
+  "board_key": "bus=pci,vendor=168c,device=003e,subsystem-vendor=17AA,subsystem-device=0310",
   "board_selection": "board-api2-exact",
   "board_bytes": 8124,
   "board_sha256": "7b01edabe0fc9071abe4d20c7f336fc5e4dc6e2ed4803df54487eef155b16862",

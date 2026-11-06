@@ -452,7 +452,7 @@ public:
     UInt32 _fwPostTargetVersion = 0xffffffffu, _fwPostTargetType = 0xffffffffu;
     const char *_fwStatus = "not-run";
     bool _ceDiagTransferUncertain = false;
-    UInt16 _vendorId = 0x168c, _deviceId = 0x003e, _subsystemVendorId = 0x1028, _subsystemId = 0x0310;
+    UInt16 _vendorId = 0x168c, _deviceId = 0x003e, _subsystemVendorId = 0x17AA, _subsystemId = 0x0310;
     const Ath10k::HwCandidate *_selectedHw = Ath10k::findCandidate(0x003e, 10);
     UInt32 _bmiTargetVersion = 0x05030000, _bmiTargetType = 8, _bmiTargetInfoLength = 12;
     UInt32 _bmiBoardDataAddress = 0x401fc0, _bmiBoardDataInitialized = 0;
