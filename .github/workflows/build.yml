@@ -1,0 +1,20 @@
+name: Build Ath10kMac
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Build Kext
+      run: xcodebuild -configuration Release
+      
+    - name: Upload Kext
+      uses: actions/upload-artifact@v4
+      with:
+        name: Ath10kMac-Lenovo
+        path: build/Release/*.kext
